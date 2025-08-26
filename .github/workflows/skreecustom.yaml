@@ -1,0 +1,11 @@
+name: 'Build Example Corne-ish Zen Custom'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '[
+        "seeeduino_xiao_ble"
+      ]'
+      branches: '["zmkfirmware/zmk/main chadgpt-o1/ZMK-XIAOv4-Std/main"]'
