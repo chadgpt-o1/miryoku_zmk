@@ -1,0 +1,7 @@
+# Copyright 2021 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+outboard_repository=chadgpt-o1/ZMK-XIAOv4-Std
+outboard_ref=NS-3x5+3+1TB
+outboard_from=boards/shields/skreecustom
+outboard_to=boards/shields/skreecustom
