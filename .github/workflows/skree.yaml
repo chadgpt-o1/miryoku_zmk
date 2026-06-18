@@ -1,0 +1,14 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'abc-skree'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["skreecustom_left","skreecustom_right"]'
+      branches: '["zmkfirmware/zmk/v0.3"]'
+      modules: '["chadgpt-o1/ZMK-XIAOv4-Std/NS-3x5+3+1TB badjeff/zmk-pmw3610-driver/zmk-0.3"]'
